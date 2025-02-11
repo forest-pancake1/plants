@@ -141,6 +141,7 @@ transform: rotate(-45deg) translate(0,-50%)
     width: 668px;
     padding-top: 43px;
     margin: auto;
+    margin-left: 49px;
   }
   .logo{
     margin-left: 0px;
@@ -182,7 +183,7 @@ transform: rotate(-45deg) translate(0,-50%)
 .header_wrapper{
   width: 330px;
   padding-top: 36px;
-  margin: auto;
+  margin-left: 23px;
   align-items: normal;
 }
 .logo{
@@ -252,7 +253,12 @@ height: 532px;
   color: rgba(1, 2, 1, 1);
   border: 2px solid rgba(224, 103, 51, 1);
   border-radius: 10px;
-  
+  transition: 0.5s;
+  cursor: pointer;
+}
+.intro_bottom:hover{
+  color: white;
+  background-color:rgba(224, 103, 51, 1);
 }
 
 @media (max-width:768px){
@@ -387,6 +393,7 @@ height: 532px;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    margin-left: 50px;
   }
   .about_description{
     height: 391px;
@@ -432,7 +439,7 @@ height: 532px;
     height: 455px;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
+    margin-left: 26px;
   }
   .about_description{
     height: 306px;
@@ -497,7 +504,8 @@ height: 532px;
   max-height: 50px;
   
 }
-.bottom{
+
+.button{
   font-family: 'Inika';
   border: 2px solid rgba(224, 103, 51, 1);
   border-radius: 5px;
@@ -509,7 +517,10 @@ height: 532px;
   color: rgba(224, 103, 51, 1);
   font-size: 20px;
   margin-right: 38px;
+  transition: 0.5s;
+  cursor: pointer;
 }
+
 .services{
   height: 960px;
   display: flex;
@@ -545,6 +556,17 @@ height: 532px;
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
+}
+.button:hover, .button:active{
+  color: white;
+  background-color:rgba(224, 103, 51, 1);
+}
+.button:focus{
+  color: white;
+  background-color:rgb(221, 111, 63);
+}
+.blur{
+  filter: blur(2px);
 }
 
 
@@ -586,7 +608,7 @@ height: 532px;
   }
   .card_description{
     width: 240px;
-    margin-left: 15px;
+    margin-left: 19px;
   }
   .card_text{
     text-align: center;
@@ -625,13 +647,14 @@ height: 532px;
     margin-left: 22px;
     margin-right: -22px;
   }
-  .bottom{
+  .button{
     height: 36px;
     width: 121px;
     font-size: 16px;
     margin-right: 11px;
     margin-bottom: 8px;
   }
+  
   .service_imgs{
     max-width: 100%;
     height: 348px;
@@ -656,6 +679,9 @@ height: 532px;
 .prices{
   height: 560px;
   
+}
+.prices1{
+  height: 660px;
 }
 .prices_wrapper{
   display: flex;
@@ -698,8 +724,79 @@ height: 532px;
   font-weight: 700;
   font-size: 20px; 
   color: black;
+  border: 0;
+  cursor: pointer;
 }
-.bottom_name{
+.options_expand{
+  height: 370px;
+}
+.option.expand{
+  height: 154px;
+  background-color: rgba(214, 231, 210, 1);
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.price_name{
+  width: 174px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+
+}
+.price_description{
+  display: none;
+  width: 170px;
+  height: 96px;
+}
+.price_expand{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.line{
+  background-color: rgba(113, 113, 113, 1);
+  width: 170px;
+  margin-top: 0;
+}
+.price{
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 6px;
+}
+.price_text{
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(113, 113, 113, 1);
+  margin-top: -2px;
+}
+.colortext4{
+  color: rgba(224, 103, 51, 1);;
+  font-weight: 700;
+  font-size: 18px;
+}
+.price_order{
+  width: 86px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+.order{
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(113, 113, 113, 1);
+}
+
+.button_name{
   margin-left: 4px;
   margin-top: 10px;
   font-family: "inter";
@@ -742,6 +839,12 @@ justify-content: flex-end;
   margin-left: 290px;
   margin-top: 38px;
   margin-bottom: 39px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.contact_btm:hover{
+  color: white;
+  background-color:rgba(224, 103, 51, 1);
 }
 .img_leafs{
   width: 190px;
@@ -760,6 +863,9 @@ justify-content: flex-end;
   .prices{
     height: 584px;
 } 
+.prices1{
+  height: 684px;
+}
 .prices_wrapper{
   width: 668px;
   margin-left: 50px;
@@ -772,12 +878,15 @@ justify-content: flex-end;
   text-indent: 14px;
 }
 .prices_options{
-  height: 285px;
+ height: 285px;
+}
+.options_expand{
+  height: 370px;
 }
 .option{
   height: 50px;
 }
-.bottom_name{
+.button_name{
   margin-top: 5px;
 }
 .contact{
@@ -799,6 +908,10 @@ justify-content: flex-end;
   .prices{
     height: 512px;
 } 
+.prices1{
+  height: 612px;
+}
+
 .prices_wrapper{
   width: 230px;
   margin-left: 77px;
@@ -823,12 +936,29 @@ justify-content: flex-end;
   padding-bottom: 10px;
   padding-top: 10px;
 }
+.options_expand{
+  height: 336px;
+}
+.price_name{
+  width: 120px;
+  flex-wrap: nowrap;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  
+}
 .option{
   height: 50px;
   width: 180px;
   justify-content: space-evenly;
 }
-.bottom_name{
+.price_description{
+  width: 140px;
+}
+.line{
+  width: 140px;
+}
+
+.button_name{
   margin-top: 5px;
   font-size: 16px;
 }
@@ -881,6 +1011,7 @@ justify-content: flex-end;
   margin-top: 53px;
   margin-bottom: 0px;
   width: 400px;
+  height: 498px;
 }
 .contact_us_title{
   font-family: 'Inika';
@@ -902,18 +1033,144 @@ justify-content: flex-end;
   margin-left: 64px;
   background-color: rgba(214, 231, 210, 1);
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.25);
+  flex-wrap: wrap;
+}
+.city_active{
+  box-shadow: none;
+  background-color: rgba(193, 230, 152, 1);
+}
+.arrow_city_open{
+  transform: rotate(180deg);
+}
+.title_box{
+  width: 395px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
 }
 .city_title{
   font-family: "inter";
   font-weight: 400;
   font-size: 20px;
 }
+.city_title_off{
+  display: none;
+}
+.title{
+  display:none;
+}
+.title_option{
+  display: flex;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 20px;
+}
 .city_box{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 395px;
-  margin-right: 16px;
+  flex-wrap: wrap;
+  width: 450px;
+  cursor: pointer;
+}
+.city_opt{
+  height: 234px;
+  width: 450px;
+  background-color: rgba(220, 233, 217, 1);
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.city_opt_active{
+  display:flex;
+}
+.cites{
+  height: 250px;
+  margin-top: 50px;
+  margin-left: 64px;
+}
+.opts{
+  width: 380px;
+  height: 50px;
+  color: rgba(73, 154, 24, 1);
+  font-size: 16px;
+  font-family: "inter";
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.opts:hover, .line2:hover{
+  color: rgba(113, 113, 113, 1);
+}
+.line2{
+  color: rgba(217, 217, 217, 1);
+  width: 380px;
+}
+.option_box{
+  height: 214px;
+  width: 448px;
+  display: none;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: rgba(237, 242, 236, 1);
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.option_box_open{
+  display: flex;
+}
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  height: 115px;
+  margin-top: 17px;
+  margin-left: 33px;
+  align-content: space-around;
+  align-items: center;
+}
+.info_names{
+  font-size: 16px;
+  line-height: 40px;
+  color: black;
+}
+.info_numbers{
+  line-height: 40px;
+  margin-left: 50px;
+}
+.btn_call_us{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.call{
+  width: 122px;
+  height: 26px;
+  border: 1px solid rgba(224, 103, 51, 1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.call:hover{
+  color: white;
+  background-color:rgba(224, 103, 51, 1);
+}
+.btn_call_name{
+  margin-top: 5.5px;
+  font-size: 10px;
+}
+.opt_card{
+  display: none;
+}
+.opt_expand{
+  display: flex;
 }
 
 
@@ -930,7 +1187,7 @@ justify-content: flex-end;
     margin-left: 74px;
   }
   .contact_us_title{
-    margin-top: -194px;
+    margin-top: -495px;
     margin-left: 90px;
   }
   .city{
@@ -938,9 +1195,13 @@ justify-content: flex-end;
     margin-left: 87px;
   }
   .woman{
+    height: 248px;
     width: 202px;
-    margin-top: 402px;
+    margin-top: 405px;
     margin-left: 102px;
+  }
+  .option_box{
+    margin-left: 25px;
   }
 }
 
@@ -957,7 +1218,7 @@ justify-content: flex-end;
     margin-left: 0px;
   }
   .contact_us_title{
-    margin-top: -158px;
+    margin-top: -458px;
     margin-left: 122px;
     font-size: 25px;
   }
@@ -972,10 +1233,32 @@ justify-content: flex-end;
     margin-right: 2px;
   }
   .woman{
+    height: 127px;
     width: 100px;
-    margin-top: 267px;
+    margin-top: 264px;
     margin-left: 45px;
   } 
+  .woman_close{
+    display: none;
+  }
+  .city_opt{
+    width: 303px;
+  }
+  .opts{
+    width: 270px;
+  }
+  .line2{
+    width: 260px;
+  }
+  .option_box{
+    margin-left: -17px;
+    width: 305px;
+    height: 196px;
+  }
+  .info{
+    margin-left: 15px;
+  }
+
 }
 /*contact us styles end*/
 
@@ -1030,7 +1313,7 @@ justify-content: flex-end;
   }
   .wrapper_footer{
     width: 211px;
-    margin-left: 0;
+    margin-left: 17px;
     flex-wrap: wrap;
     margin-top: 32px;
   }

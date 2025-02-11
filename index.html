@@ -75,44 +75,44 @@
         <div class="service_btns">
           <h2 class="service_title">Service and our projects</h2>
           <ul class="service_btns_list">
-            <bottom class="bottom">Gardens</bottom>
-            <bottom class="bottom">Lawn</bottom>
-            <bottom class="bottom">Planting</bottom>
+            <button class="button" data-type="garden" id="gardens_btn">Gardens</button>
+            <button class="button" data-type="lawn" id="lawn_btn">Lawn</button>
+            <button class="button" data-type="planting" id="plant_btn">Planting</button>
           </ul>
         </div>
         <div class="services">
-          <div class="card">
+          <div class="card " data-type="garden">
             <img src="./img/first.png" class="service_imgs">
             <div class="card_description">
               <h2 class="card_title">Garden care</h2>
               <p class="card_text">Lorem Ipsum has been the industry</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-type="planting">
              <img src="./img/first (1).png" class="service_imgs">
             <div class="card_description">
               <h2 class="card_title">Planting</h2>
               <p class="card_text">Lorem Ipsum has been the industry</p>
             </div></div>
-          <div class="card">
+          <div class="card" data-type="lawn">
              <img src="./img/first (2).png" class="service_imgs">
             <div class="card_description">
               <h2 class="card_title">Lawn care</h2>
               <p class="card_text">Lorem Ipsum has been the industry</p>
             </div></div>
-          <div class="card">
+          <div class="card" data-type="planting">
              <img src="./img/first (3).png" class="service_imgs">
             <div class="card_description">
               <h2 class="card_title">Planting</h2>
               <p class="card_text">Lorem Ipsum has been the industry</p>
             </div></div>
-          <div class="card">
+          <div class="card" data-type="garden">
              <img src="./img/first (4).png" class="service_imgs">
             <div class="card_description">
               <h2 class="card_title">Garden care</h2>
               <p class="card_text">Lorem Ipsum has been the industry</p>
             </div></div>
-          <div class="card">
+          <div class="card" data-type="planting">
              <img src="./img/first (5).png" class="service_imgs">
             <div class="card_description">
               <h2 class="card_title">Planting</h2>
@@ -129,18 +129,51 @@
         <div class="prices_list">
           <h2 class="prices_title">Prices</h2>
           <div class="prices_options">
-            <bottom class="option">
-              <h2 class="bottom_name">Basics</h2>
-              <img src="./img/accordion_btn.png" alt="btm">
-            </bottom>
-            <bottom class="option">
-              <h2 class="bottom_name">Standard</h2>
-              <img src="./img/accordion_btn.png" alt="btm">
-            </bottom>
-            <bottom class="option">
-              <h2 class="bottom_name">Pro care</h2>
-              <img src="./img/accordion_btn.png" alt="btm">
-            </bottom>
+            <div class="option" data-type="opt_1">
+              <div class="price_name">
+              <h2 class="button_name">Basics</h2>
+              <img src="./img/accordion_btn.png" alt="btn">
+            </div>
+              <div class="price_description" data-type="opt_1">
+                <hr class="line">
+                <h2 class="price_text">Release of Letraset sheets containing
+                   Lorem Ipsum passages, and more recently</h2>
+                <h2 class="price"><span class="colortext4">$15</span> / per hour</h2>
+                <div class="price_order">
+                  <h2 class="order">Order</h2>
+                </div>
+              </div>
+            </div>
+            <div class="option" data-type="opt_2">
+              <div class="price_name">
+              <h2 class="button_name">Standard</h2>
+              <img src="./img/accordion_btn.png" alt="btn">
+            </div>
+              <div class="price_description" data-type="opt_2">
+                <hr class="line">
+                <h2 class="price_text">Release of Letraset sheets containing
+                   Lorem Ipsum passages, and more recently</h2>
+                <h2 class="price"><span class="colortext4">$25</span> / per hour</h2>
+                <div class="price_order">
+                  <h2 class="order">Order</h2>
+                </div>
+              </div>
+            </div>
+            <div class="option" data-type="opt_3">
+              <div class="price_name">
+              <h2 class="button_name">Pro care</h2>
+              <img src="./img/accordion_btn.png" alt="btn">
+            </div>
+              <div class="price_description" data-type="opt_3">
+                <hr class="line">
+                <h2 class="price_text">Release of Letraset sheets containing
+                   Lorem Ipsum passages, and more recently</h2>
+                <h2 class="price"><span class="colortext4">$35</span> / per hour</h2>
+                <div class="price_order">
+                  <h2 class="order">Order</h2>
+                </div>
+              </div>
+            </div>
           </div>
           </div>
         <div class="contact">
@@ -158,21 +191,226 @@
         <div class="contact_us_wrapper">
           <img src="./img/contact_woman 1.png" alt="woman" class="woman">
           <h2 class="contact_us_title">Contact us</h2>
+          <div class="city_options">
           <div class="city">
-            <div class="city_box">
+           <div class="city_box">
+            <div class="title_box">
             <h2 class="city_title">City</h2>
-            <img src="./img/accordion_btn2.png" alt="arrow">
+            <h2 class="title" data-type="Canandaigua">Canandaigua, NY</h2>
+            <h2 class="title" data-type="Yonkers">Yonkers, NY</h2>
+            <h2 class="title" data-type="Sherrill">Sherrill, NY</h2>
+            <h2 class="title" data-type="NewYork">New York City, NY</h2>
+            <img src="./img/accordion_btn2.png" alt="arrow" class="arrow_city">
           </div>
+            </div>
+            <div class="city_opt">
+              <div class="Canandaigua opts" data-type="Canandaigua">
+                <h2>Canandaigua, NY
+                  <br><hr class="line2">
+                </h2>
+              </div>
+              <div class="NewYork opts" data-type="NewYork">
+                <h2>New York City
+                  <br><hr class="line2">
+                </h2>
+                </h2>
+              </div>
+              <div class="Yonkers opts" data-type="Yonkers">
+                <h2>Yonkers, NY
+                  <br><hr class="line2">
+                </h2>
+                </h2>
+              </div>
+              <div class="Sherrill opts" data-type="Sherrill">
+                <h2>Sherrill, NY
+                  <br><hr class="line2">
+                </h2>
+                </h2>
+              </div>
+            </div>
+           
           </div>
+          <div class="cites">
+            <div class="option_box">
+              <div class="info">
+                <div class="info_names">
+                  <h2>City: <br>Phone: <br>Office adress:</h2>
+                </div>
+                <div class="info_numbers">
+                  <div class="opt_card Yonkers" data-type="Yonkers">Yonkers, NY <br>+1	914	678 0003 <br>511 Warburton Ave</div>
+                  <div class="opt_card Canandaigua" data-type="Canandaigua">Canandaigua, NY<br>+1	585	393 0001<br>151 Charlotte Street</div>
+                  <div class="opt_card Sherrill" data-type="Sherrill">Sherrill, NY<br>+1	315	908 000414 <br>WEST Noyes BLVD</div>
+                  <div class="opt_card NewYork" data-type="NewYork">New York City<br>+1	212	456 0002 <br>9 East 91st Street</div>
+                </div>
+              </div>
+              <div class="btn_call_us">
+                <button class="call">
+                  <h2 class="btn_call_name">Call us</h2>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>
   </main>
   <script>
+    // бургер меню
     document.querySelector('.burger').addEventListener('click',function(){
       this.classList.toggle('active');
       document.querySelector('.header_nav').classList.toggle('open');
     })
+
+    // карточки в разделе service
+    document.addEventListener('DOMContentLoaded', () => {
+
+    const buttons = document.querySelectorAll('.service_btns_list button');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+
+        const activeButtons = document.querySelectorAll('.service_btns_list button.active');
+        const activeTypes = Array.from(activeButtons).map(btn => btn.dataset.type);
+
+        if(activeButtons.length === 0) {
+          cards.forEach(card => 
+            card.classList.remove('blur'));
+            return;
+        }
+        cards.forEach(card => {
+          if(activeTypes.includes(card.dataset.type)) {
+            card.classList.remove('blur');
+          } else {
+            card.classList.add('blur');
+          }
+        })
+
+        if(activeButtons.length === 3) {
+          cards.forEach(card =>
+            card.classList.remove('blur'));
+        }
+      });
+    });
+  });
+
+  // карточки в разделе price
+  const opt = document.querySelectorAll('.option');
+  const outsideBox = document.querySelector('.prices_options');
+  const description = document.querySelectorAll('.price_description');
+  const pageHeigt = document.querySelector('.prices');
+  opt.forEach(o => {
+    o.addEventListener('click', () => {
+      opt.forEach(option => {
+        if (option !== o) {
+          option.classList.remove('expand');
+        }
+      });
+      description.forEach(card => {
+        card.classList.remove('price_expand');
+      });
+      pageHeigt.classList.remove('prices1');
+
+      o.classList.toggle('expand');
+        if (o.classList.contains('expand')) {
+      const activeType = o.dataset.type;
+      description.forEach(card => {
+        if(card.dataset.type === activeType) {
+          card.classList.toggle('price_expand');
+        };
+      });
+      pageHeigt.classList.toggle('prices1');
+    }
+      const isAnyBlockOpen = Array.from(opt).some(option =>
+      option.classList.contains('expand')
+      );
+      if(isAnyBlockOpen) {
+        outsideBox.classList.add('options_expand');
+      } else {
+        outsideBox.classList.remove('options_expand');
+      }
+
+    });
+  });
+
+
+  // карточки в разделе City
+
+  const cityBox = document.querySelector('.city_box');
+const city = document.querySelector('.city');
+const cityOpt = document.querySelector('.city_opt');
+ const option = document.querySelector('.option_box');
+const optS = document.querySelectorAll('.opts');
+const optCard = document.querySelectorAll('.opt_card');
+const woman = document.querySelector('.woman');
+const cityTitle = document.querySelector('.city_title');
+const title = document.querySelectorAll('.title');
+const arrow = document.querySelector('.arrow_city');
+
+function updateWoman() {
+if(city.classList.contains('city_active') ||
+ option.classList.contains('option_box_open')) {
+  woman.classList.add('woman_close');
+} else {
+  woman.classList.remove('woman_close');
+};
+};
+
+cityBox.addEventListener('click', () => {
+  if (option.classList.contains('option_box_open')) {
+    option.classList.remove('option_box_open');
+  };
+  optCard.forEach(card => {
+  if (card.classList.contains('opt_expand')) {
+    card.classList.remove('opt_expand');
+  };
+});
+title.forEach(titl => {
+  if(titl.classList.contains('title_option')){
+    cityTitle.classList.remove('city_title_off');
+    titl.classList.remove('title_option');
+  }
+ });
+
+ cityOpt.classList.toggle('city_opt_active');
+
+ if(cityOpt.classList.contains('city_opt_active')){
+  city.classList.add('city_active');
+  arrow.classList.toggle('arrow_city_open');
+ } else {
+  city.classList.remove('city_active');
+  arrow.classList.remove('arrow_city_open');
+ }
+ updateWoman();
+});
+
+
+
+optS.forEach(opt => {
+opt.addEventListener('click', () => {
+
+ cityOpt.classList.remove('city_opt_active');
+ option.classList.add('option_box_open');
+ 
+ const activeType = opt.dataset.type;
+
+ title.forEach(titl => {
+  if(activeType === titl.dataset.type){
+    cityTitle.classList.toggle('city_title_off');
+    titl.classList.toggle('title_option');
+  }
+ });
+ optCard.forEach(card => {
+ if(activeType === card.dataset.type){
+   card.classList.toggle('opt_expand');
+ }
+});
+updateWoman();
+ });
+});
+
   </script>
 </body>
 <footer>
